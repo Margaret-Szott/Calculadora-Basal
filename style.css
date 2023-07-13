@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body{
+        background: #f6f5f7; 
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(17, 16, 16);
+}
+
+#contenedor{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    inset: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+}
+
+#calculadora{
+background-color: rgb(192, 237, 237);
+width: 50%;
+height: 100%;
+float: left;
+
+
+}
+#detalle{
+background-color: rgb(14, 7, 159);
+color: rgb(228, 218, 206);
+width: 50%;
+height: 100%;
+float: left;
+text-align: center;
+}
+
+.contenido{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+
+input{
+    width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: rgb(234, 228, 221);
+}
+
+button {
+    font-size: 15px;
+      font-weight: bold;
+      padding: 12px 45px;
+      border-radius: 30px;
+      background-color: #0a058e;
+      border: 1px solid #182dd2;
+      color: bisque;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 20ms ease-in;
+      transform: translateY(20%);
+  }
+
+  button:active {
+	transform: scale(0.95);
+}
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
