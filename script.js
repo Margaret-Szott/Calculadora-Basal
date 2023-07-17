@@ -1,4 +1,3 @@
-
 const BOTON = document.getElementById("calcular")
 const FLU = document.getElementById("flu")
 const FLUJO = document.getElementById("flujo")
@@ -12,8 +11,8 @@ if (DATO > 0 && DATO <= 30){
     ERROR.style.display = 'none'
     let flujo = calcFlujo(DATO);
     let mantenimiento = flujo*1.5;
-    FLU.innerHTML = flujo[0] + ' cc/hr';
-    FLUJO.innerHTML = flujo[1] + ' cc';
+    FLU.innerHTML = flujo[0] + ' cc';
+    FLUJO.innerHTML = flujo[1] + ' cc/hr';
     MAN.innerHTML = 'm+m/2 ' + flujo[2] + ' cc/hr';
     FLU.style.display = 'block';
     FLUJO.style.display = 'block';
