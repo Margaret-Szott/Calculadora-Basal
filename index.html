@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script> 
+    <script src="./tarea.js"></script>
 </head>
 <body>
     <div id="contenedor">
@@ -12,9 +14,11 @@
             <div class="contenido">
                 <h1>Hidratacion Basal</h1>
                 <p class="item">Ingrese todos los datos</p>
-                <input class="imput" type="number" placeholder="Peso en Kg">
+                <input class="imput" type="number" id="peso" placeholder="Peso en Kg">
                 <p class="item" id="error">Debe completar todos los datos</p>
-                <button class="item">Calcular</button>
+                <button class="item" id="calcular"> calcular</button>
+                <p id = "error" style= "display : none" ; none;> Ingrese un valor</p>
+                <p class="item resultado" id="flujo">70cc/hh</p>
                 <p class="item resultado" id="flu">70cc/hh</p>
                 <p class="item resultado" id="man">m+m/2 105cc/hr</p>
             </div>

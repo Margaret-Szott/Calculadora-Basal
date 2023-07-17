@@ -14,7 +14,7 @@ if (DATO > 0 && DATO <= 30){
     let mantenimiento = flujo*1.5;
     FLU.innerHTML = flujo[0] + ' cc/hr';
     FLUJO.innerHTML = flujo[1] + ' cc/hr';
-    MAN.innerHTML = 'm+m/2 ' + FLUJO[2] + ' cc/hr';
+    MAN.innerHTML = 'm+m/2 ' + flujo[2] + ' cc/hr';
     FLU.style.display = 'block';
     FLUJO.style.display = 'block';
     MAN.style.display = 'block';
@@ -47,7 +47,7 @@ function calcFlujo(peso){
 }
 
 function supeficieCorporal(peso){
-    let supeficieCorporal = ((peso * 4) + 7 / (peso + 90))
+    let supeficieCorporal = ((peso * 4) + 7) / (peso + 90)
     return [(supeficieCorporal * 1500).toFixed(2),(supeficieCorporal * 2000).toFixed(2)]
 }
 
