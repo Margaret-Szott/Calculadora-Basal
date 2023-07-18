@@ -35,12 +35,12 @@ else {
 
 function calcFlujo(peso){
     let flujo = 0
-    if (peso>=10) {
-        flujo = peso *100
-    } else if( peso>10 && peso<=20) {
-        flujo = 1000 + ((peso-10)*50)
-    } else{
-        flujo = 1500 + ((peso-20)*20)
+    if (peso <= 10) {
+        flujo= peso * 100;
+    } else if (peso <= 20) {
+        flujo = 1000 + (peso - 10) * 50;
+    } else {
+        flujo = 1500 + (peso - 20) * 20;
     }
     return [flujo.toFixed(2),(flujo/24).toFixed(2),((flujo/24)*1.5).toFixed(2)]
 }
